@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 1</title>
+    <style>
+        /* Базові налаштування для всього документа */
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333333;
+            --accent-color: #0056b3;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Дизайн головного контейнера (картки) */
+        main {
+            background-color: var(--card-bg);
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        main:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Стилізація заголовка */
+        header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Стилізація контенту */
+        section p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section p strong {
+            font-size: 0.85rem;
+            color: #888;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        section p span {
+            font-weight: 500;
+            color: #222;
+        }
+
+        /* Стилізація підвалу (інформація про студента) */
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+            background-color: #fcfcfc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        footer span {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Адаптивність для телефонів */
+        @media (max-width: 480px) {
+            main {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="subtitle">Освітньо-професійна програма</div>
+            <h1>Комп'ютеризовані роботизовані технології машинобудування</h1>
+        </header>
+
+        <section>
+            <p>
+                <strong>Рівень вищої освіти</strong>
+                <span>Другий (магістерський)</span>
+            </p>
+            <p>
+                <strong>Галузь знань</strong>
+                <span>G Інженерія, виробництво та будівництво</span>
+            </p>
+            <p>
+                <strong>Спеціальність</strong>
+                <span>G9 Прикладна механіка</span>
+            </p>
+        </section>
+
+        <footer>
+            Виконав(ла): <span>Семенчук Микола</span> <br>
+            Група: <span>КН-25-1</span>
+        </footer>
+    </main>
+
+</body>
+</html>
