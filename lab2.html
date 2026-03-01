@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 1 та 2</title>
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --text-color: #333333;
+            --accent-color: #0056b3;
+            --card-bg: #ffffff;
+            --border-color: #dddddd;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        main {
+            background-color: var(--card-bg);
+            max-width: 900px; /* Розширили картку для таблиці */
+            width: 100%;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 35px;
+        }
+
+        h3 {
+            color: #444;
+            margin-top: 25px;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Стилі для списків */
+        ul, ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Стилі для таблиці */
+        .table-responsive {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fdfdfd;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+            background-color: #fcfcfc;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        footer span {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            main { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <header>
+            <div class="subtitle">Освітньо-професійна програма</div>
+            <h1>Комп'ютеризовані роботизовані технології машинобудування</h1>
+        </header>
+
+        <section>
+            <p><b>Рівень вищої освіти:</b> Другий (магістерський) рівень вищої освіти</p>
+            <p><b>Галузь знань:</b> G Інженерія, виробництво та будівництво</p>
+            <p><b>Спеціальність:</b> G9 Прикладна механіка</p>
+        </section>
+
+        <section>
+            <h2>Мета освітньої програми</h2>
+            <p>Підготовка професіоналів, здатних розв’язувати складні задачі прикладної механіки на основі інноваційних технологій та конструкцій машин, зокрема роботизованих і автоматизованих систем, у сферах машинобудівного виробництва, викладацької та науково-дослідницької діяльності.</p>
+        </section>
+
+        <section>
+            <h2>Програмні компетентності</h2>
+            
+            <h3>Загальні компетентності</h3>
+            <ul>
+                <li>ЗК1 – здатність виявляти та вирішувати інженерно-технічні проблеми</li>
+                <li>ЗК2 – використання інформаційних та комунікаційних технологій</li>
+                <li>ЗК3 – креативність</li>
+                <li>ЗК4 – розробка та управління проєктами</li>
+                <li>ЗК5 – комунікація з представниками інших професійних груп</li>
+                <li>ЗК6 – здатність вчитися й оволодівати сучасними знаннями</li>
+                <li>ЗК7 – спілкування іноземною мовою</li>
+            </ul>
+
+            <h3>Фахові компетентності</h3>
+            <ol>
+                <li>ФК1 – застосування сучасних методів інженерії для оптимальних рішень</li>
+                <li>ФК2 – класифікація та моделювання технічних об’єктів і процесів</li>
+                <li>ФК3 – самостійна робота та керівництво групою</li>
+                <li>ФК4 – чітке донесення висновків і знань</li>
+                <li>ФК5 – знання організації гнучкого автоматизованого виробництва</li>
+                <li>ФК6 – організація матеріальних і нематеріальних потоків виробництва</li>
+                <li>ФК7 – розуміння технологічних особливостей верстатів з ЧПК</li>
+                <li>ФК8 – розробка технологій виготовлення деталей на верстатах з ЧПК</li>
+                <li>ФК9 – використання систем автоматизованого проектування (САПР)</li>
+                <li>ФК10 – знання методів наукового експерименту</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Перелік компонент освітньої програми</h2>
+            
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Код н/д</th>
+                            <th>Компоненти освітньої програми (навчальні дисципліни, курсові проекти (роботи), практики, кваліфікаційна робота)</th>
+                            <th>Кількість кредитів</th>
+                            <th>Форма підсумкового контролю</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4" class="text-center"><b>Обов'язкова частина</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-center"><b>Цикл 1 – Дисципліни загальної підготовки</b></td>
+                        </tr>
+                        <tr>
+                            <td>ЗП.01</td>
+                            <td>Інновації та управління проєктами в галузі механічної інженерії</td>
+                            <td class="text-center">3</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ЗП.02</td>
+                            <td>Охорона праці в галузі</td>
+                            <td class="text-center">3</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ЗП.03</td>
+                            <td>Основи наукових досліджень</td>
+                            <td class="text-center">3</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ЗП.04</td>
+                            <td>Стратегія сталого розвитку в освіті</td>
+                            <td class="text-center">2</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-center"><b>Цикл 2 – Дисципліни професійної підготовки</b></td>
+                        </tr>
+                        <tr>
+                            <td>ПП.01</td>
+                            <td>Промислова логістика</td>
+                            <td class="text-center">4</td>
+                            <td>Іспит</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.02</td>
+                            <td>Технологічні основи ГАВ</td>
+                            <td class="text-center">2</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.03</td>
+                            <td>САМ-системи і програмування верстатів з ЧПК</td>
+                            <td class="text-center">7</td>
+                            <td>Іспит, КР</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.04</td>
+                            <td>САПР технологічних процесів</td>
+                            <td class="text-center">4</td>
+                            <td>Іспит</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.05</td>
+                            <td>Основи проектування і виготовлення пресформ та штампів</td>
+                            <td class="text-center">6</td>
+                            <td>Залік, КР</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.06</td>
+                            <td>САЕ-системи та інженерний аналіз конструкцій машин</td>
+                            <td class="text-center">5</td>
+                            <td>Іспит</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.07</td>
+                            <td>Моделювання технічних систем</td>
+                            <td class="text-center">3</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.08</td>
+                            <td>Ділова комунікація та професійна термінологія іноземною мовою</td>
+                            <td class="text-center">3</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.09</td>
+                            <td>Переддипломна практика</td>
+                            <td class="text-center">9</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ПП.10</td>
+                            <td>Магістерська робота</td>
+                            <td class="text-center">12</td>
+                            <td>Публічний захист</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Загальний обсяг обов'язкової частини</b></td>
+                            <td colspan="2" class="text-center"><b>66 кредитів ЄКТС</b></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4" class="text-center"><b>Вибіркова частина</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-center"><b>Цикл 1. Дисципліни із кафедрального каталогу</b></td>
+                        </tr>
+                        <tr>
+                            <td>ПО1.01</td>
+                            <td>Дисципліна 1</td>
+                            <td class="text-center">5</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ПО1.02</td>
+                            <td>Дисципліна 2</td>
+                            <td class="text-center">5</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ПО1.03</td>
+                            <td>Дисципліна 3</td>
+                            <td class="text-center">5</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" class="text-center"><b>Цикл 2. Дисципліни із загальноуніверситетського каталогу</b></td>
+                        </tr>
+                        <tr>
+                            <td>ВБ2.01</td>
+                            <td>Дисципліна 1</td>
+                            <td class="text-center">3</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ВБ2.02</td>
+                            <td>Дисципліна 2</td>
+                            <td class="text-center">3</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td>ВБ2.03</td>
+                            <td>Дисципліна 3</td>
+                            <td class="text-center">3</td>
+                            <td>Залік</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Загальний обсяг вибіркової частини</b></td>
+                            <td colspan="2" class="text-center"><b>24 кредити ЄКТС</b></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><b>Загальний обсяг освітньої програми</b></td>
+                            <td colspan="2" class="text-center"><b>90 кредитів ЄКТС</b></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            Виконав: <span>Семенчук Микола</span> <br>
+            Група: <span>КН-25-1</span>
+        </footer>
+    </main>
+
+</body>
+</html>
