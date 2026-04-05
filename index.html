@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна - Лабораторна 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <header>
+        <h1>Комп'ютеризовані роботизовані технології машинобудування</h1>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="competencies.html">Компетенції</a></li>
+                <li><a href="components.html">Компоненти</a></li>
+                <li><a href="graph.html">Схема</a></li>
+                <li><a href="team.html">Робоча група</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="header-info">
+            <p class="subtitle">Рівень вищої освіти: другий (магістерський) рівень вищої освіти</p>
+            <p class="subtitle">Галузь знань: G Інженерія, виробництво та будівництво</p>
+            <p class="subtitle">Спеціальність: G9 Прикладна механіка</p>
+        </div>
+
+        <h2>Мета освітньої програми</h2>
+        <p>Підготовка професіоналів, здатних розв’язувати складні задачі прикладної механіки на основі інноваційних технологій та конструкцій машин, зокрема роботизованих і автоматизованих систем, у сферах машинобудівного виробництва, викладацької та науково‑дослідницької діяльності.</p>
+
+        <h2>Заявка на вступ</h2>
+        <form class="admission-form">
+            <div class="form-group">
+                <label for="fullname">ПІБ:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Дата народження:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="form-group">
+                <label for="specialty">Спеціальність:</label>
+                <select id="specialty" name="specialty" required>
+                    <option value="">Оберіть спеціальність</option>
+                    <option value="mech">131 Прикладна механіка</option>
+                    <option value="comp">122 Комп'ютерні науки</option>
+                    <option value="auto">151 Автоматизація технологій</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="document">Документ (Скан-копія):</label>
+                <input type="file" id="document" name="document" accept=".pdf, .jpg" required>
+            </div>
+            <button type="submit">Відправити заявку</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Семенчук Микола © ІФНТУНГ, 2026 р.</p>
+    </footer>
+
+</body>
+</html>
